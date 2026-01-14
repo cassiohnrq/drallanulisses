@@ -1,3 +1,4 @@
+// Navbar scroll behavior deixando transparente ao topo e depois colorido
 document.addEventListener("DOMContentLoaded", function () {
   const navbar = document.querySelector(".navbar");
 
@@ -15,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", checkScroll);
 });
 
-
+// Sincronização entre abas horizontais e accordion
  document.addEventListener('DOMContentLoaded', function () {
     const navLinks = document.querySelectorAll('#info-accordion .nav-link');
     const accordionItems = document.querySelectorAll('#info-accordion .accordion-collapse');
@@ -41,3 +42,37 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   });
+
+
+// Smooth scroll e centralização do accordion ao clicar nos links
+document.querySelectorAll('a[href^="#aba"]').forEach(link => {
+  link.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    const targetId = this.getAttribute('href');
+    const collapseEl = document.querySelector(targetId);
+
+    if (!collapseEl) return;
+
+    // Abre o accordion
+    const bsCollapse = new bootstrap.Collapse(collapseEl, {
+      toggle: true
+    });
+
+    // Scroll para o centro da tela
+    setTimeout(() => {
+      const rect = collapseEl.getBoundingClientRect();
+      const elementTop = rect.top + window.pageYOffset;
+      const offset = (window.innerHeight / 2) - (rect.height / 2);
+
+      window.scrollTo({
+        top: elementTop - offset,
+        behavior: 'smooth'
+      });
+    }, 300); // espera o accordion abrir
+  });
+});
+
+
+
+
