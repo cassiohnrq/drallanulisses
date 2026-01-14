@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dr. Alan Ulisses</title>
-
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
   <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
   <link rel="stylesheet" href="../bootstrap/css/style.css">
 </head>
@@ -22,7 +23,9 @@
       </button>
 
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
+        
+        <!-- MENU -->
+        <ul class="navbar-nav ms-auto align-items-lg-center">
           <li class="nav-item">
             <a class="nav-link active" href="#">Home</a>
           </li>
@@ -43,11 +46,27 @@
             </ul>
           </li>
         </ul>
-      </div>
 
+        <!-- ÍCONES -->
+        <div class="d-flex align-items-center gap-3 ms-lg-4 mt-3 mt-lg-0">
+          <a href="https://wa.me/5579999332204" target="_blank" class="text-white fs-5">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+
+          <a href="https://www.instagram.com/dr.allanulisses/" target="_blank" class="text-white fs-5">
+            <i class="bi bi-instagram"></i>
+          </a>
+
+          <a href="mailto:allanulisses@gmail.com" class="text-white fs-5">
+            <i class="bi bi-envelope-fill"></i>
+          </a>
+        </div>
+
+      </div>
     </div>
   </nav>
 </header>
+
 
 <!-- HERO (IMAGEM ABAIXO DO MENU) -->
 <section class="hero">
@@ -61,86 +80,104 @@
   </div>
 </section>
 
-<!-- 3 ÁREAS -->
-<section class="features">
+<section class="py-5 bg-light">
   <div class="container">
-    <div class="row text-center">
 
-      <div class="col-md-4 mb-4">
-        <img src="https://via.placeholder.com/80" alt="">
-        <h5>Atendimento Humanizado</h5>
-        <p>Cuidado completo focado no bem-estar do paciente.</p>
+    <div id="perfilCarousel" class="carousel slide carousel-dark"
+         data-bs-ride="carousel"
+         data-bs-interval="5000"
+         data-bs-wrap="true">
+
+      <div class="carousel-inner text-center">
+
+        <!-- SLIDE 1 -->
+        <div class="carousel-item active">
+          <div class="perfil-foto">
+            <img src="/assets/imagens/allan.png" alt="Dr. Allan Ulisses Carvalho de Melo">
+          </div>
+
+          <h3 class="fw-bold">Dr. Allan Ulisses Carvalho de Melo</h3>
+
+          <p class="text-muted">
+            <a href="https://www.instagram.com/dr.allanulisses/" target="_blank">
+              @dr.allanulisses
+            </a>
+          </p>
+
+          <p class="mx-auto">
+            Cirurgião-dentista desde 2000, advogado desde 2018 e biólogo licenciado desde 2025.
+            Possui título de PhD, é mestre (MSc) e especialista em Estomatologia, com formação
+            complementar nas áreas de Odontologia Legal, Odontologia Hospitalar, Saúde Pública
+            e Saúde Coletiva. Atua também como especialista em Perícia Criminal e Judicial,
+            Segurança Pública e Investigação Criminal, além de possuir especialização em
+            Direito Constitucional. É pós-graduado em Implantes Dentários e Cirurgia Bucal.
+            Atualmente, exerce a função de odontolegista no Instituto Médico Legal de Sergipe
+            (IML-SE) e atua como CBMF no Hospital de Urgência de Sergipe (HUSE). Na área acadêmica,
+            é professor universitário de pós-graduação na rede privada desde 2008, ministrando
+            disciplinas como Bioética, Ética e Legislação e Estomatologia Aplicada em cursos de
+            especialização em Odontologia. É autor de inúmeros artigos científicos e capítulos
+            de livros, com relevante contribuição para as áreas da saúde, odontologia e direito.
+          </p>
+
+          <!-- Botão Lattes -->
+          <a href="http://lattes.cnpq.br/2808018167548455" target="_blank" class="btn btn-primary btn-lattes">
+            Ver Currículo Lattes
+          </a>
+        </div>
+
+        <!-- SLIDE 2 -->
+        <div class="carousel-item">
+          <div class="perfil-foto">
+            <img src="/assets/imagens/cintia.png" alt="Dra. Cyntia Ferreira Ribeiro">
+          </div>
+
+          <h3 class="fw-bold">Dra. Cyntia Ferreira Ribeiro</h3>
+
+          <p class="text-muted">
+            <a href="https://www.instagram.com/dracyntiafribeiro/" target="_blank">
+              @dracyntiafribeiro
+            </a>
+          </p>
+
+          <p class="mx-auto">
+            Cirurgiã-dentista desde 1999, doutora, mestre e especialista em Prótese Dentária
+            pela Universidade de Taubaté (UNITAU-SP). Possui especialização em Odontologia
+            Hospitalar, Saúde Coletiva e Saúde da Família pela Universidade Federal de Sergipe
+            (UFS). Conta com mais de 20 anos de experiência no atendimento de pacientes edêntulos
+            que necessitam de reabilitações orais extensas, atuando com prótese sobre implantes,
+            próteses totais e próteses parciais removíveis, incluindo próteses obturadoras
+            indicadas em casos decorrentes de cirurgias para tratamento do câncer bucal.
+            Atua também no tratamento de pacientes com Desordens Temporomandibulares (DTM).
+            Na área acadêmica, exerce a função de professora universitária na graduação e
+            na pós-graduação, sendo autora de inúmeros artigos científicos e capítulos de livros,
+            com relevante contribuição para a odontologia.
+          </p>
+
+          <!-- Botão Lattes -->
+          <a href="http://lattes.cnpq.br/2329571085145222" target="_blank" class="btn btn-primary btn-lattes">
+            Ver Currículo Lattes
+          </a>
+        </div>
+
       </div>
 
-      <div class="col-md-4 mb-4">
-        <img src="https://via.placeholder.com/80" alt="">
-        <h5>Tecnologia Avançada</h5>
-        <p>Equipamentos modernos para melhores resultados.</p>
-      </div>
+      <!-- CONTROLES -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#perfilCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
 
-      <div class="col-md-4 mb-4">
-        <img src="https://via.placeholder.com/80" alt="">
-        <h5>Especialidades</h5>
-        <p>Soluções completas em odontologia.</p>
-      </div>
+      <button class="carousel-control-next" type="button" data-bs-target="#perfilCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
 
     </div>
+
   </div>
 </section>
 
-<!-- 3 ÁREAS -->
-<section class="features">
-  <div class="container">
-    <div class="row text-center">
 
-      <div class="col-md-4 mb-4">
-        <img src="https://via.placeholder.com/80" alt="">
-        <h5>Atendimento Humanizado</h5>
-        <p>Cuidado completo focado no bem-estar do paciente.</p>
-      </div>
 
-      <div class="col-md-4 mb-4">
-        <img src="https://via.placeholder.com/80" alt="">
-        <h5>Tecnologia Avançada</h5>
-        <p>Equipamentos modernos para melhores resultados.</p>
-      </div>
 
-      <div class="col-md-4 mb-4">
-        <img src="https://via.placeholder.com/80" alt="">
-        <h5>Especialidades</h5>
-        <p>Soluções completas em odontologia.</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- 3 ÁREAS -->
-<section class="features">
-  <div class="container">
-    <div class="row text-center">
-
-      <div class="col-md-4 mb-4">
-        <img src="https://via.placeholder.com/80" alt="">
-        <h5>Atendimento Humanizado</h5>
-        <p>Cuidado completo focado no bem-estar do paciente.</p>
-      </div>
-
-      <div class="col-md-4 mb-4">
-        <img src="https://via.placeholder.com/80" alt="">
-        <h5>Tecnologia Avançada</h5>
-        <p>Equipamentos modernos para melhores resultados.</p>
-      </div>
-
-      <div class="col-md-4 mb-4">
-        <img src="https://via.placeholder.com/80" alt="">
-        <h5>Especialidades</h5>
-        <p>Soluções completas em odontologia.</p>
-      </div>
-
-    </div>
-  </div>
-</section>
 
 <script src="../bootstrap/js/bootstrap.bundle.js"></script>
 <script src="../bootstrap/js/script.js"></script>
