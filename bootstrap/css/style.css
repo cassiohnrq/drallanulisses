@@ -1,0 +1,123 @@
+:root {
+  --bs-principal: #00796B;
+  --bs-secundaria: #004D40; 
+  --bs-background: #E0F2F1;
+  --bs-hover: #c0c0c0;
+}
+
+body {
+  background-color: var(--bs-background);
+  margin: 0;
+}
+
+/* =========================
+   Navbar
+   ========================= */
+.navbar {
+  font-weight: 600; /* letras mais grossas */
+  box-shadow: 0 2px 10px rgba(0,0,0,0.10);
+  border-bottom: 1px solid rgba(255,255,255,0.7);
+  border-width: 75dvw;
+  transition: all 0.3s ease;
+}
+
+/* Navbar transparente */
+.navbar-transparent {
+  background-color: transparent !important;
+  border-bottom: 2px solid rgba(255,255,255,0.3);
+}
+
+/* Navbar sólida ao rolar */
+.navbar-scrolled {
+  background-color: var(--bs-secundaria) !important;
+  border-bottom: 2px solid var(--bs-hover);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+/* Navbar brand */
+.navbar-brand {
+  color: white;
+}
+
+/* Links do menu */
+.navbar .nav-link {
+  text-decoration: none;
+  transition: color 0.3s;
+  font-weight: 600;
+}
+
+/* Cor dos links */
+.navbar-transparent .nav-link {
+  color: white;
+}
+.navbar-scrolled .nav-link {
+  color: var(--bs-hover);
+}
+
+/* Hover, focus e ativo */
+.navbar .nav-link:hover,
+.navbar .nav-link:focus,
+.navbar .nav-link.active {
+  color: var(--bs-hover);
+}
+
+/* Dropdown */
+.dropdown-menu {
+  background-color: var(--bs-principal);
+}
+.dropdown-menu .dropdown-item {
+  color: white;
+}
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item:focus,
+.dropdown-menu .dropdown-item.active {
+  background-color: var(--bs-principal);
+  color: var(--bs-hover);
+}
+.nav-item.dropdown.show > .nav-link {
+  color: var(--bs-hover);
+}
+
+/* Toggler */
+.navbar-toggler {
+  border-color: white;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.navbar-toggler:hover,
+.navbar-toggler:focus {
+  border-color: var(--bs-hover);
+}
+
+/* =========================
+   Hero
+   ========================= */
+.hero {
+  width: 100vw;
+  height: 320px;
+  color: white;
+  background: linear-gradient(
+      rgba(0,0,0,0.45),
+      rgba(0,0,0,0.45)
+    ),
+    url("/assets/imagens/imagem-site.png") center / cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* =========================
+   Seção 3 áreas
+   ========================= */
+.features {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.features img {
+  max-width: 80px;
+  margin-bottom: 15px;
+}
