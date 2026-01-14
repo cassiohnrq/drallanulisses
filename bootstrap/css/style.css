@@ -8,6 +8,7 @@
 body {
   background-color: var(--bs-background);
   margin: 0;
+  overflow-x: hidden;
 }
 
 /* =========================
@@ -232,6 +233,164 @@ body {
   filter: brightness(0.4);
 }
 
+/* =========================
+   Seção Livro
+   ========================= */
+#livro h2 {
+  font-size: 2rem;
+  color: var(--bs-secundaria);
+}
+
+#livro h5 {
+  font-size: 1.2rem;
+  color: #555555;
+}
+
+#livro p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333333;
+}
+
+/* Botões */
+#livro .btn-success {
+  background-color: var(--bs-secundaria);
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+#livro .btn-success:hover {
+  background-color: var(--bs-principal);
+}
+
+#livro .btn-outline-primary {
+  border-color: var(--bs-secundaria);
+  color: var(--bs-secundaria);
+  transition: all 0.3s ease;
+}
+
+#livro .btn-outline-primary:hover {
+  background-color: var(--bs-secundaria);
+  color: #fff;
+}
+
+/* Imagem rotacionada nos cantos */
+#livro .rotate-img {
+  width: 500px; /* ajuste conforme necessário */
+  height: auto; 
+  transform: rotate(0deg);
+  z-index: 0;
+}
+
+/* Section precisa ser referência */
+#livro {
+  background-color: var(--bs-background);
+  position: relative;
+  overflow: hidden; /* evita a imagem vazar */
+}
+
+/* Imagem decorativa do topo */
+#livro .rotate-img.top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-40%, -50%) rotate(0deg); /* ajusta posição + ângulo */
+  width: 650px; /* ajuste conforme necessário */
+  height: auto;
+  z-index: 0; /* fica atrás */
+  pointer-events: none; /* não interfere em cliques */
+}
+
+/* Conteúdo sempre acima */
+#livro .container,
+#livro .row {
+  position: relative;
+  z-index: 2;
+}
+
+/* Imagem decorativa do bottom */
+#livro .rotate-img.bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(40%, 50%) rotate(0deg); /* ajusta posição + ângulo */
+  width: 650px; /* ajuste conforme necessário */
+  height: auto;
+  z-index: 0; /* fica atrás */
+  pointer-events: none; /* não interfere em cliques */
+}
+
+/* =========================
+   Accordion + Tabs
+   ========================= */
+
+   #info-accordion {
+  background-color: #dff3f1;
+}
+
+/* Tabs desktop */
+#info-accordion {
+  background-color: var(--bs-background);
+}
+
+#info-accordion .nav-tabs .nav-link {
+  color: #555;
+  font-weight: 500;
+  border: none;
+  border-bottom: 3px solid transparent;
+  background: none;
+}
+
+/* Highlight da aba quando ativa */
+#info-accordion .nav-tabs .nav-link.active {
+  color: var(--bs-principal);
+  border-bottom: 3px solid var(--bs-principal);
+}
+
+/* Accordion */
+#info-accordion .accordion-item {
+  border: none;
+  margin-bottom: 0.75rem;
+  background-color: transparent;
+}
+
+#info-accordion .accordion-body {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #333;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  border-radius: 10px;
+}
+
+/* =========================
+   Seção Contato
+   ========================= */
+.contato-section {
+  background-color: #f0f8ff; /* cor de fundo diferenciada */
+}
+
+.contato-section h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.contato-section p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.contato-info a {
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.3s;
+}
+
+.contato-info a:hover {
+  color: #0056b3;
+}
+
+
 
 /* =========================
    Responsividade
@@ -241,9 +400,17 @@ body {
     height: 200px;
     padding: 0 15px;
   }
-  .hero h1, p {
-    display: none;
-  }
+  .hero h1,
+  .hero p {
+  display: none;
+}
+
+p.mx-auto{
+  display: none;
+}
+p.mb-4{
+  display: none;
+}
 
   .navbar-transparent {
   background-color: var(--bs-secundaria) !important;
@@ -260,7 +427,7 @@ body {
     padding: 0 1rem;
   }
 
-    #perfilCarousel .instagram a,
+  #perfilCarousel .instagram a,
   #perfilCarousel .text-muted a {
     font-size: 0.9rem;
   }
@@ -268,6 +435,24 @@ body {
   #perfilCarousel .btn-lattes {
     font-size: 0.95rem;
     padding: 0.5rem 1.2rem;
+  }
+
+    #livro .rotate-img {
+    width: 60px;
+    height: 60px;
+  }
+
+  #info-accordion .accordion-button {
+    font-weight: 600;
+  }
+
+  #info-accordion .accordion-button:not(.collapsed) {
+    background-color: #e6f2f0;
+    color: var(--bs-principal);
+  }
+
+   #info-accordion .accordion-body {
+    display: block;
   }
 
 }
