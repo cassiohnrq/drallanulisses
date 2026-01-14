@@ -3,7 +3,13 @@
   --bs-secundaria: #004D40; 
   --bs-background: #E0F2F1;
   --bs-hover: #c0c0c0;
+  --bs-back-profissional: #ffffffb6;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 
 body {
   background-color: var(--bs-background);
@@ -122,6 +128,14 @@ body {
 .features img {
   max-width: 80px;
   margin-bottom: 15px;
+}
+
+/* =========================
+   Seção Profissionais
+   ========================= */
+
+.profissionais {
+  background: linear-gradient(180deg, #dbdbdb 0%, #f4f4f4 100%);
 }
 
 /* Área geral do carousel */
@@ -366,29 +380,60 @@ body {
    Seção Contato
    ========================= */
 .contato-section {
-  background-color: #f0f8ff; /* cor de fundo diferenciada */
+  background-color: var(--bs-secundaria);
 }
 
-.contato-section h2 {
-  font-size: 2rem;
-  font-weight: 600;
-  color: #333;
-}
-
-.contato-section p {
-  font-size: 1rem;
-  color: #555;
+.contato-section h2,
+.contato-section p,
+.contato-info,
+.contato-info i,
+.contato-info a {
+  color: #fff;
 }
 
 .contato-info a {
   text-decoration: none;
-  color: #007bff;
   transition: color 0.3s;
 }
 
 .contato-info a:hover {
-  color: #0056b3;
+  color: var(--bs-hover);
 }
+
+/* =========================
+   Footer
+   ========================= */
+.footer-section {
+  background-color: var(--bs-secundaria);
+  position: relative;
+}
+
+.footer-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 75%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.4);
+  transform: translateX(-50%);
+}
+
+.footer-section p {
+  color: #fff;
+  font-size: 0.9rem;
+  margin: 0;
+}
+.footer-section a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+.footer-section a:hover {
+  color: var(--bs-hover);
+}
+
+
 
 
 
