@@ -19,6 +19,7 @@ body {
   border-bottom: 1px solid rgba(255,255,255,0.7);
   border-width: 75dvw;
   transition: all 0.3s ease;
+  text-shadow: #000 1px 1px 2px;
 }
 
 /* Navbar transparente */
@@ -120,4 +121,153 @@ body {
 .features img {
   max-width: 80px;
   margin-bottom: 15px;
+}
+
+/* Área geral do carousel */
+#perfilCarousel {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Nome */
+#perfilCarousel h3 {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  letter-spacing: 0.3px;
+  text-align: center;
+  color: var(--bs-secundaria);
+}
+
+/* Texto descritivo */
+#perfilCarousel p.mx-auto {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #444;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
+  max-width: 700px;
+}
+
+/* Link Lattes */
+#perfilCarousel p.mx-auto a {
+  display: inline-block;
+  margin-top: 0.75rem;
+  color: var(--bs-secundaria);
+  font-weight: 500;
+  text-decoration: none;
+  word-break: break-all;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+#perfilCarousel p.mx-auto a:hover {
+  color: var(--bs-secundaria);
+  text-decoration: underline;
+}
+
+/* Ajuste da foto */
+.perfil-foto {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.perfil-foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+/* Instagram e links gerais do perfil */
+#perfilCarousel .text-muted a,
+#perfilCarousel .instagram a {
+  color: var(--bs-hover);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  margin-bottom: 1rem;
+  transition: color 0.3s ease;
+}
+
+#perfilCarousel .text-muted a:hover,
+#perfilCarousel .instagram a:hover {
+  color: var(--bs-secundaria);
+  text-decoration: underline;
+}
+
+/* Botão Lattes centralizado */
+#perfilCarousel .btn-lattes {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 50px;
+  background-color: var(--bs-principal); /* cor inicial */
+  color: #fff;              /* texto branco */
+  transition: all 0.3s ease;
+  text-decoration: none;
+  border: none;
+}
+
+#perfilCarousel .btn-lattes:hover {
+  background-color: var(--bs-secundaria); /* azul bootstrap no hover */
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/* Controles mais suaves */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: brightness(0.4);
+}
+
+
+/* =========================
+   Responsividade
+   ========================= */
+@media screen and (max-width: 768px) {
+  .hero {
+    height: 200px;
+    padding: 0 15px;
+  }
+  .hero h1, p {
+    display: none;
+  }
+
+  .navbar-transparent {
+  background-color: var(--bs-secundaria) !important;
+  border-bottom: 2px solid rgba(255,255,255,0.3);
+}
+
+  #perfilCarousel h3 {
+    font-size: 1.4rem;
+  }
+
+  #perfilCarousel p.mx-auto {
+    font-size: 0.95rem;
+    line-height: 1.65;
+    padding: 0 1rem;
+  }
+
+    #perfilCarousel .instagram a,
+  #perfilCarousel .text-muted a {
+    font-size: 0.9rem;
+  }
+
+  #perfilCarousel .btn-lattes {
+    font-size: 0.95rem;
+    padding: 0.5rem 1.2rem;
+  }
+
 }
