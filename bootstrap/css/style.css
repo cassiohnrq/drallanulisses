@@ -449,6 +449,15 @@ body {
   color: var(--bs-hover);
 }
 
+.img-sobreposta {
+  max-width: 200%;        /* deixa a imagem maior que a coluna */
+  opacity: 0.25;          /* transparência */
+  position: relative;
+  align-items: center;
+  align-content: center;
+  z-index: 1;
+  transform: translateX(20px); /* empurra a imagem sobre o texto */
+}
 
 
 
@@ -457,6 +466,12 @@ body {
    Responsividade
    ========================= */
 @media screen and (max-width: 768px) {
+
+    .img-sobreposta {
+    max-width: 180%;
+    transform: translateX(40px);
+  }
+
   .hero {
     height: 200px;
     padding: 0 15px;
