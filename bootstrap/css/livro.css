@@ -1,6 +1,6 @@
 :root {
-  --bs-principal: #00796B;
-  --bs-secundaria: #004D40; 
+  --bs-principal: #D83135;
+  --bs-secundaria: #222222; 
   --bs-background: #E0F2F1;
   --bs-hover: #c0c0c0;
   --bs-back-profissional: #ffffffb6;
@@ -118,14 +118,14 @@ body {
    Hero
    ========================= */
 .hero {
-  width: 100vw;
-  height: 320px;
+  width: 100dvw;
+  height: 50dvh;
   color: white;
   background: linear-gradient(
       rgba(0,0,0,0.45),
       rgba(0,0,0,0.45)
     ),
-    url("/assets/imagens/imagem-site.png") center / cover no-repeat;
+    url("/assets/imagens/imagem-site-livro.png") center / cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -449,8 +449,25 @@ body {
   color: var(--bs-hover);
 }
 
+/* =========================
+   Seção decorativa
+   ========================= */
 
+.bg-section {
+      height: 120px; /* ajuste como quiser */
+      background-image: url('/assets/imagens/decor-line.png');
+      background-size: cover;
+      background-position: center;
+      box-shadow:
+        inset 0 20px 20px -20px rgba(0, 0, 0, 0.6),
+        inset 0 -20px 20px -20px rgba(0, 0, 0, 0.6);
+    }
 
+.list-no-bg .list-group-item {
+    background-color: transparent;
+    border: none;
+    padding-left: 0; /* opcional: remove recuo do Bootstrap */
+  }
 
 
 /* =========================
