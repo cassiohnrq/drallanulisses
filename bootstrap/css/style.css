@@ -4,6 +4,7 @@
   --bs-background: #E0F2F1;
   --bs-hover: #c0c0c0;
   --bs-back-profissional: #ffffffb6;
+  --bs-vinho:#800020;
 }
 
 html {
@@ -457,6 +458,187 @@ body {
   align-content: center;
   z-index: 1;
   transform: translateX(20px); /* empurra a imagem sobre o texto */
+}
+
+.profissional-card a {
+  text-decoration: none; /* remove a linha do link */
+  color: #6c757d;        /* mantém a cor cinza */
+  transition: color 0.3s;
+}
+
+.profissional-card a:hover {
+  color: var(--bs-principal); /* muda a cor ao passar o mouse */
+}
+
+.btn-lattes {
+  background-color: var(--bs-back-profissional);
+  color: #fff;
+  border: var(--bs-secundaria) 2px solid;
+  border-radius: 50px;
+  padding: 0.5rem 1.5rem;
+  transition: 0.3s;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.btn-lattes:hover {
+  background-color: var(--bs-hover);
+  color: var(--bs-secundaria);
+}
+
+
+.text-secundaria {
+  color: var(--bs-secundaria);
+}
+
+.descanso-section {
+  background: linear-gradient(180deg, #e0f2f1, #f7fafa);
+}
+
+.service-section h3 {
+  margin-bottom: 1rem;
+}
+
+.service-section ul {
+  padding-left: 1rem;
+}
+
+.service-section ul li {
+  margin-bottom: 0.4rem;
+}
+
+.descanso-section.vinho {
+  background: linear-gradient(180deg, #f7fafa, #e0f2f1);
+}
+
+.divider-vinho {
+  display: inline-block;
+  width: 60px;
+  height: 3px;
+  background-color: var(--bs-vinho);
+  border-radius: 2px;
+}
+
+.btn-vinho {
+  background-color: var(--bs-vinho);
+  color: #fff;
+  border-radius: 50px;
+  padding: 0.55rem 1.6rem;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.btn-vinho:hover {
+  background-color: #5e0017;
+  color: #fff;
+}
+
+.linha-vinho {
+  display: inline-block;
+  width: 6px;
+  height: 36px;
+  background-color: var(--bs-vinho);
+  border-radius: 4px;
+}
+
+.service-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.service-section ul li {
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 0.5rem;
+}
+
+.service-section ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 8px;
+  height: 8px;
+  background-color: var(--bs-vinho);
+  border-radius: 50%;
+}
+
+.service-section img {
+  width: 100%;                 /* garante que a imagem preencha a coluna */
+  height: auto;                /* mantém proporção */
+  border-radius: 1rem;         /* bordas arredondadas */
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1); /* sombra suave */
+  object-fit: cover;           /* mantém enquadramento sem distorcer */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-section img:hover {
+  transform: translateY(-5px) scale(1.02);  /* leve elevação e zoom */
+  box-shadow: 0 1rem 1.5rem rgba(0,0,0,0.15); /* sombra um pouco mais forte */
+}
+
+
+.divider-branco {
+  display: inline-block;
+  width: 60px;
+  height: 3px;
+  background-color: #ffffff;
+  border-radius: 2px;
+}
+
+.descanso-vinho {
+  background-color: var(--bs-vinho);
+  color: #ffffff;
+}
+
+.descanso-vinho h4 {
+  letter-spacing: 0.5px;
+}
+
+.descanso-vinho p {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.descanso-institucional {
+  background-color: #222222;
+  color: #D83135;
+}
+
+.descanso-institucional h3 {
+  color: white;
+}
+
+.divider-principal {
+  display: inline-block;
+  width: 60px;
+  height: 3px;
+  background-color: #D83135;
+  border-radius: 2px;
+}
+
+.descanso-institucional h4 {
+  letter-spacing: 0.5px;
+}
+
+.descanso-institucional p {
+  max-width: 720px;
+  margin: 0 auto;
+  color: white;
+}
+
+.btn-saiba-mais {
+  background-color: #D83135;
+  color: #ffffff;
+  border-radius: 50px;
+  padding: 0.55rem 1.8rem;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.btn-saiba-mais:hover {
+  background-color: white;
+  color: #D83135;
 }
 
 
