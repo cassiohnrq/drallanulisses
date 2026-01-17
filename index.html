@@ -36,13 +36,13 @@
             <a class="nav-link" href="#profissionais">Profissionais</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#info-accordion">Serviços</a>
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Especialidades</a>
             <ul class="dropdown-menu dropdown-menu-end">
-                <li><a class="dropdown-item active" href="#aba1">Estomatologia</a></li>
-                <li><a class="dropdown-item" href="#aba2">Cirurgia Bucal</a></li>
-                <li><a class="dropdown-item" href="#aba3">Prótese Dentária</a></li>
-                <li><a class="dropdown-item" href="#aba4">Implantes Dentários</a></li>
-                <li><a class="dropdown-item" href="#aba5">Estética Facial e Dentária</a></li>
+                <li><a class="dropdown-item" href="#estomatologia">Estomatologia</a></li>
+                <li><a class="dropdown-item" href="#cirurgia-bucal">Cirurgia Bucal</a></li>
+                <li><a class="dropdown-item" href="#protese-dentaria">Prótese Dentária</a></li>
+                <li><a class="dropdown-item" href="#implantes-dentarios">Implantes Dentários</a></li>
+                <li><a class="dropdown-item" href="#estetica-facial-dentaria">Estética Facial e Dentária</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -83,417 +83,361 @@
   </div>
 </section>
 
-
-<section id="profissionais" class="py-5 bg-light profissionais">
+<section id="profissionais" class="py-5 profissionais">
   <div class="container">
 
-    <div id="perfilCarousel" class="carousel slide carousel-dark"
-         data-bs-ride="carousel"
-         data-bs-interval="5000"
-         data-bs-wrap="true">
-
-      <div class="carousel-inner text-center">
-
-        <!-- SLIDE 1 -->
-        <div class="carousel-item active">
-          <div class="perfil-foto">
-            <img src="/assets/imagens/allan.png" alt="Dr. Allan Ulisses Carvalho de Melo">
-          </div>
-
-          <h3 class="fw-bold">Dr. Allan Ulisses Carvalho de Melo</h3>
-
-          <p class="text-muted">
-            <a href="https://www.instagram.com/dr.allanulisses/" target="_blank">
-              @dr.allanulisses
-            </a>
-          </p>
-
-          <p class="mx-auto">
-            Cirurgião-dentista desde 2000, advogado desde 2018 e biólogo licenciado desde 2025.
-            Possui título de PhD, é mestre (MSc) e especialista em Estomatologia, com formação
-            complementar nas áreas de Odontologia Legal, Odontologia Hospitalar, Saúde Pública
-            e Saúde Coletiva. Atua também como especialista em Perícia Criminal e Judicial,
-            Segurança Pública e Investigação Criminal, além de possuir especialização em
-            Direito Constitucional. É pós-graduado em Implantes Dentários e Cirurgia Bucal.
-            Atualmente, exerce a função de odontolegista no Instituto Médico Legal de Sergipe
-            (IML-SE) e atua como CBMF no Hospital de Urgência de Sergipe (HUSE). Na área acadêmica,
-            é professor universitário de pós-graduação na rede privada desde 2008, ministrando
-            disciplinas como Bioética, Ética e Legislação e Estomatologia Aplicada em cursos de
-            especialização em Odontologia. É autor de inúmeros artigos científicos e capítulos
-            de livros, com relevante contribuição para as áreas da saúde, odontologia e direito.
-          </p>
-
-          <!-- Botão Lattes -->
-          <a href="http://lattes.cnpq.br/2808018167548455" target="_blank" class="btn btn-primary btn-lattes">
-            Ver Currículo Lattes
-          </a>
-        </div>
-
-        <!-- SLIDE 2 -->
-        <div class="carousel-item">
-          <div class="perfil-foto">
-            <img src="/assets/imagens/cintia.png" alt="Dra. Cyntia Ferreira Ribeiro">
-          </div>
-
-          <h3 class="fw-bold">Dra. Cyntia Ferreira Ribeiro</h3>
-
-          <p class="text-muted">
-            <a href="https://www.instagram.com/dracyntiafribeiro/" target="_blank">
-              @dracyntiafribeiro
-            </a>
-          </p>
-
-          <p class="mx-auto">
-            Cirurgiã-dentista desde 1999, doutora, mestre e especialista em Prótese Dentária
-            pela Universidade de Taubaté (UNITAU-SP). Possui especialização em Odontologia
-            Hospitalar, Saúde Coletiva e Saúde da Família pela Universidade Federal de Sergipe
-            (UFS). Conta com mais de 20 anos de experiência no atendimento de pacientes edêntulos
-            que necessitam de reabilitações orais extensas, atuando com prótese sobre implantes,
-            próteses totais e próteses parciais removíveis, incluindo próteses obturadoras
-            indicadas em casos decorrentes de cirurgias para tratamento do câncer bucal.
-            Atua também no tratamento de pacientes com Desordens Temporomandibulares (DTM).
-            Na área acadêmica, exerce a função de professora universitária na graduação e
-            na pós-graduação, sendo autora de inúmeros artigos científicos e capítulos de livros,
-            com relevante contribuição para a odontologia.
-          </p>
-
-          <!-- Botão Lattes -->
-          <a href="http://lattes.cnpq.br/2329571085145222" target="_blank" class="btn btn-primary btn-lattes">
-            Ver Currículo Lattes
-          </a>
-        </div>
-
-      </div>
-
-      <!-- CONTROLES -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#perfilCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </button>
-
-      <button class="carousel-control-next" type="button" data-bs-target="#perfilCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </button>
-
+    <div class="text-center mb-5">
+      <h2 class="fw-bold text-secundaria">Nossos Profissionais</h2>
+      <p class="text-muted">Experiência, excelência e compromisso com a saúde</p>
     </div>
 
+    <div class="row g-4 justify-content-center">
+
+      <!-- PROFISSIONAL 1 -->
+      <div class="col-12 col-md-6 col-lg-5">
+        <div class="card profissional-card h-100 text-center p-4 d-flex flex-column">
+          <div class="perfil-foto mb-3">
+            <img src="/assets/imagens/allan.png" alt="Dr. Allan Ulisses" class="img-fluid rounded-circle">
+          </div>
+
+          <h5 class="fw-bold">Dr. Allan Ulisses Carvalho de Melo</h5>
+
+          <a href="https://www.instagram.com/dr.allanulisses/"
+             target="_blank"
+             class="text-muted d-block mb-3">
+            @dr.allanulisses
+          </a>
+
+          <p class="small text-start flex-grow-1">
+            Cirurgião-dentista desde 2000, PhD, mestre e especialista em Estomatologia,
+            com ampla atuação clínica, acadêmica e pericial.
+          </p>
+
+          <!-- BOTÃO LATTES -->
+          <a href="http://lattes.cnpq.br/2808018167548455"
+             target="_blank"
+             class="btn btn-lattes mt-3">
+            Currículo Lattes
+          </a>
+        </div>
+      </div>
+
+      <!-- PROFISSIONAL 2 -->
+      <div class="col-12 col-md-6 col-lg-5">
+        <div class="card profissional-card h-100 text-center p-4 d-flex flex-column">
+          <div class="perfil-foto mb-3">
+            <img src="/assets/imagens/cintia.png" alt="Dra. Cyntia Ribeiro" class="img-fluid rounded-circle">
+          </div>
+
+          <h5 class="fw-bold">Dra. Cyntia Ferreira Ribeiro</h5>
+
+          <a href="https://www.instagram.com/dracyntiafribeiro/"
+             target="_blank"
+             class="text-muted d-block mb-3">
+            @dracyntiafribeiro
+          </a>
+
+          <p class="small text-start flex-grow-1">
+            Doutora, mestre e especialista em Prótese Dentária,
+            com mais de 20 anos de experiência em reabilitações orais complexas.
+          </p>
+
+          <!-- BOTÃO LATTES -->
+          <a href="http://lattes.cnpq.br/2329571085145222"
+             target="_blank"
+             class="btn btn-lattes mt-3">
+            Currículo Lattes
+          </a>
+        </div>
+      </div>
+
+    </div>
   </div>
 </section>
 
-<section id="info-accordion" class="py-5 bg-light">
+
+<section class="py-5 descanso-section vinho">
+  <div class="container text-center">
+    <span class="divider-vinho"></span>
+    <h4 class="fw-light mt-3 text-secundaria">
+      Cuidado odontológico baseado em ciência, experiência e ética
+    </h4>
+  </div>
+</section>
+
+<section id="estomatologia" class="py-5 service-section bg-white">
   <div class="container">
+    <div class="row align-items-center g-5">
 
-    <!-- MENU HORIZONTAL (DESKTOP) -->
-    <ul class="nav nav-tabs justify-content-center mb-4 d-none d-md-flex">
-      <li class="nav-item">
-        <button class="nav-link active" data-bs-toggle="collapse" data-bs-target="#aba1">
-          Estomatologia
-        </button>
-      </li>
-      <li class="nav-item">
-        <button class="nav-link" data-bs-toggle="collapse" data-bs-target="#aba2">
-          Cirurgia bucal
-        </button>
-      </li>
-      <li class="nav-item">
-        <button class="nav-link" data-bs-toggle="collapse" data-bs-target="#aba3">
-          Prótese dentária
-        </button>
-      </li>
-      <li class="nav-item">
-        <button class="nav-link" data-bs-toggle="collapse" data-bs-target="#aba4">
-          Implantes dentários
-        </button>
-      </li>
-      <li class="nav-item">
-        <button class="nav-link" data-bs-toggle="collapse" data-bs-target="#aba5">
-          Estética facial e dentária
-        </button>
-      </li>
-    </ul>
+      <div class="col-12 col-md-5">
+        <img src="/assets/imagens/01.jpg"
+             class="img-fluid rounded-4 shadow"
+             alt="Estomatologia">
+      </div>
 
-    <!-- ACCORDION -->
-    <div class="accordion" id="accordionHorizontal">
-
-      <!-- ITEM 1 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header d-md-none">
-          <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#aba1">
+      <div class="col-12 col-md-7">
+        <div class="service-header mb-3">
+          <span class="linha-vinho"></span>
+          <h3 class="fw-bold text-secundaria d-inline-block ms-3">
             Estomatologia
-          </button>
-        </h2>
-        <div id="aba1" class="accordion-collapse collapse show" data-bs-parent="#accordionHorizontal">
-  <div class="accordion-body">
-
-    <!-- ROW obrigatória para colunas funcionarem -->
-    <div class="row align-items-start">
-
-      <!-- Imagem -->
-<div class="col-12 col-md-2 mb-3 mb-md-0 text-center position-relative">
-  <img src="/assets/imagens/livro.png"
-       class="img-fluid rounded img-sobreposta"
-       alt="Capa do Livro">
-</div>
-
-
-      <!-- Texto -->
-      <div class="col-12 col-md-10">
-            <h5 class="d-none d-md-block mb-3">Estomatologia</h5>
-        <p>
-          É a especialidade da Odontologia que diagnostica e trata doenças da boca e estruturas anexas. Ela alia os conhecimentos da clínica com a patologia bucal. Interage com todas as especialidades odontológicas e médicas.
-        </p>
+          </h3>
+        </div>
 
         <p>
-          O <strong>ESTOMATOLOGISTA</strong> é o cirurgião-dentista especialista em Estomatologia que, além de diagnosticar e tratar câncer, tumores e cistos bucais, também atende pacientes com dor orofacial, com manifestações bucais de doenças sistêmicas e encaminha ao médico pacientes com doenças sistêmicas que possam, ou não, interferir no tratamento odontológico.
+          Especialidade dedicada ao diagnóstico e tratamento das doenças da boca,
+          glândulas salivares e estruturas associadas.
         </p>
 
-        <p><strong>Quem deve se consultar com um ESTOMATOLOGISTA:</strong></p>
-
-        <ul class="ps-3">
-          <li>Pacientes com Lesões Bucais (feridas, manchas, tumores, nódulos, caroços)</li>
-          <li>Pacientes com Câncer que irão receber Quimioterapia e Radioterapia</li>
-          <li>Pacientes com Ardência Bucal</li>
-          <li>Pacientes com Dor Orofacial Crônica</li>
-          <li>Pacientes com Doenças de Pele ou de Sangue que afetem a boca</li>
-          <li>Pacientes Renais Crônicos</li>
-          <li>PNE / PCD – Pacientes com Necessidades Especiais ou Com Deficiências</li>
-          <li>Pacientes que usam Bifosfonatos</li>
+        <ul>
+          <li>Lesões bucais</li>
+          <li>Câncer bucal</li>
+          <li>Dor orofacial</li>
+          <li>Doenças sistêmicas com manifestação oral</li>
         </ul>
+
+        <a href="#contato" class="btn btn-vinho">
+          Agendar Avaliação
+        </a>
       </div>
 
     </div>
   </div>
-</div>
-
-      </div>
-
-      <!-- ITEM 2 -->
-<div class="accordion-item">
-  <h2 class="accordion-header d-md-none">
-    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#aba2">
-      Cirurgia bucal
-    </button>
-  </h2>
-
-  <div id="aba2" class="accordion-collapse collapse" data-bs-parent="#accordionHorizontal">
-    <div class="accordion-body">
+</section>
 
 
+<section class="py-5 descanso-vinho">
+  <div class="container text-center">
 
-      <div class="row align-items-start">
+    <span class="divider-branco mb-3"></span>
 
-      <!-- Imagem -->
-<div class="col-12 col-md-2 mb-3 mb-md-0 text-center position-relative">
-  <img src="/assets/imagens/livro.png"
-       class="img-fluid rounded img-sobreposta"
-       alt="Capa do Livro">
-</div>
+    <h4 class="fw-light mb-3">
+      Saúde, estética e confiança em cada sorriso
+    </h4>
 
-        <!-- Texto -->
-        <div class="col-12 col-md-10">
-                <h5 class="d-none d-md-block mb-3">Cirurgia bucal</h5>
-          <p>
-            Toda cirurgia bucal deve ser planejada e executada por um cirurgião-dentista capacitado e experiente, de modo a evitar complicações e sequelas pós-operatórias.
-          </p>
-
-          <p>
-            Realizamos qualquer tipo de procedimento cirúrgico na cavidade bucal que possa ser feito com segurança sob anestesia local em consultório odontológico. Se necessário, no caso de pacientes muito ansiosos, é feita sedação com uso de medicamentos. A recuperação geralmente é rápida e realizada em casa, com o uso de medicamentos e alguns cuidados.
-          </p>
-
-          <p><strong>A cirurgia oral inclui os seguintes procedimentos:</strong></p>
-
-          <ul class="ps-3">
-            <li>Extrações dentárias, inclusive de dentes do siso (terceiros molares)</li>
-            <li>Biópsias bucais</li>
-            <li>Frenectomia – cirurgia de freio lingual e labial</li>
-            <li>Aumento de coroa clínica (corte na gengiva)</li>
-            <li>Tracionamento de dente incluso para tracionamento ortodôntico</li>
-          </ul>
-
-          <p>
-            Atualmente, com um cenário de odontologia conservadora, as exodontias devem ser realizadas apenas quando estritamente indicadas ou quando não houver possibilidade de outros procedimentos que permitam salvar o dente.
-          </p>
-
-          <p>
-            Imediatamente após a extração dentária deve ser feita a reabilitação oral com a realização de <strong>enxerto ósseo</strong> e até mesmo a inserção de um <strong>implante dentário</strong>, permitindo a recuperação total da capacidade mastigatória do paciente.
-          </p>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</div>
-
-     <!-- ITEM 3 -->
-<div class="accordion-item">
-  <h2 class="accordion-header d-md-none">
-    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#aba3">
-      Prótese dentária
-    </button>
-  </h2>
-
-  <div id="aba3" class="accordion-collapse collapse" data-bs-parent="#accordionHorizontal">
-    <div class="accordion-body">
-
-
-
-      <div class="row align-items-start">
-
-      <!-- Imagem -->
-<div class="col-12 col-md-2 mb-3 mb-md-0 text-center position-relative">
-  <img src="/assets/imagens/livro.png"
-       class="img-fluid rounded img-sobreposta"
-       alt="Capa do Livro">
-</div>
-
-        <!-- Texto -->
-        <div class="col-12 col-md-10">
-                <h5 class="d-none d-md-block mb-3">Prótese dentária</h5>
-          <p>
-            Os dentes são órgãos essenciais para a mastigação, fonação e estética e, caso sejam perdidos, devem ser repostos com o uso de uma prótese dentária, seja de um dente ou de vários. Existem diversos tipos de prótese dentária, como a prótese total (dentadura), a prótese parcial removível (ponte móvel), a prótese fixa (coroa, bloco ou ponte fixa) e a prótese sobre implantes.
-          </p>
-
-          <p>
-            A prótese sobre implantes é a melhor forma de repor dentes que já foram extraídos. Nesse tipo de prótese, os dentes de porcelana utilizam apenas os implantes de titânio como sustentação. Não é necessário realizar tratamento de canal (endodontia) nem desgastar dentes sadios para fazer apoios. A estética e a força mastigatória obtidas são as melhores possíveis.
-          </p>
-
-          <p>
-            Quando todos os dentes foram perdidos e se faz necessária uma prótese total sobre implantes, esse sistema passa a ser chamado de <strong>prótese protocolo</strong>. Nessa situação, entre 4 a 6 implantes são inseridos cirurgicamente na maxila ou na mandíbula e unidos por uma barra metálica. Em seguida, uma prótese com todos os dentes é parafusada sobre esses implantes de modo definitivo, devolvendo cerca de <strong>85% da força mastigatória</strong> dos dentes naturais.
-          </p>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</div>
-
-
-      <!-- ITEM 4 -->
-<div class="accordion-item">
-  <h2 class="accordion-header d-md-none">
-    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#aba4">
-      Implantes dentários
-    </button>
-  </h2>
-
-  <div id="aba4" class="accordion-collapse collapse" data-bs-parent="#accordionHorizontal">
-    <div class="accordion-body">
-
-
-
-      <div class="row align-items-start">
-
-      <!-- Imagem -->
-<div class="col-12 col-md-2 mb-3 mb-md-0 text-center position-relative">
-  <img src="/assets/imagens/livro.png"
-       class="img-fluid rounded img-sobreposta"
-       alt="Capa do Livro">
-</div>
-
-        <!-- Texto -->
-        <div class="col-12 col-md-10">
-                <h5 class="d-none d-md-block mb-3">Implantes dentários</h5>
-          <p>
-            Implante dentário é um cilindro (pino) de titânio colocado dentro do osso, abaixo da gengiva, que exerce a mesma função da raiz do dente. Sobre o implante é fixada a prótese dentária, permitindo recuperar a mastigação e fornecer uma estética natural. Pacientes adultos de todas as idades podem realizar o tratamento, inclusive pessoas muito idosas.
-          </p>
-
-          <p>
-            O implante dentário é a melhor alternativa para a perda de dentes, seja de um, dois, alguns ou de todos. Entre as principais vantagens em optar pelos implantes dentários, destacam-se:
-          </p>
-
-          <ul class="ps-3">
-            <li>Estética superior</li>
-            <li>Excelente função mastigatória</li>
-            <li>Instalação sem necessidade de desgastar dentes sadios adjacentes</li>
-            <li>Alta durabilidade</li>
-            <li>Ótima relação custo-benefício em comparação com outros tipos de prótese dentária</li>
-          </ul>
-
-          <p>
-            A cirurgia para colocação de implantes não dói e é realizada com anestesia local, durando cerca de 45 minutos. Após a instalação, ocorre o processo de <strong>osseointegração</strong>, que é a união total do implante ao osso, em um período médio de 3 a 6 meses. Finalizado esse processo, a prótese sobre implante é instalada de forma definitiva.
-          </p>
-
-          <p>
-            Em alguns casos, antes da colocação do implante, pode ser necessária a realização de uma cirurgia prévia de <strong>enxerto ósseo</strong>, especialmente quando o osso da maxila ou mandíbula apresenta volume insuficiente. O enxerto pode ser feito com osso do próprio paciente ou com material ósseo sintético, que é a técnica mais utilizada atualmente.
-          </p>
-
-          <p>
-            Dependendo da situação clínica, é possível realizar o enxerto ósseo e a instalação do implante no mesmo procedimento. Caso ainda exista dente ou raiz dentária sem possibilidade de tratamento, estes podem ser extraídos e o implante instalado no mesmo momento, acelerando o processo de reabilitação oral.
-          </p>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<!-- ITEM 5 -->
-<div class="accordion-item">
-  <h2 class="accordion-header d-md-none">
-    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#aba5">
-      Estética facial e dentária
-    </button>
-  </h2>
-
-  <div id="aba5" class="accordion-collapse collapse" data-bs-parent="#accordionHorizontal">
-    <div class="accordion-body">
-
-
-
-      <div class="row align-items-start">
-
-      <!-- Imagem -->
-<div class="col-12 col-md-2 mb-3 mb-md-0 text-center position-relative">
-  <img src="/assets/imagens/livro.png"
-       class="img-fluid rounded img-sobreposta"
-       alt="Capa do Livro">
-</div>
-
-        <!-- Texto -->
-        <div class="col-12 col-md-10">
-      <h5 class="d-none d-md-block mb-3">Estética facial e dentária</h5>
-          <p><strong>Clareamento dental e lentes de contato dentais</strong></p>
-
-          <p>
-            O clareamento dentário é um tratamento odontológico no qual o cirurgião-dentista aplica um gel sobre os dentes para remover manchas e torná-los mais brancos. Cada sessão dura cerca de 30 minutos e pode ser repetida uma ou duas vezes até atingir o limite de branqueamento de cada dente. Em alguns casos, é necessário complementar com o clareamento caseiro.
-          </p>
-
-          <p>
-            As lentes de contato dentais consistem no desgaste mínimo de dentes naturais para a colocação de lâminas de porcelana extremamente finas, proporcionando melhor formato e coloração mais clara aos dentes.
-          </p>
-
-          <p><strong>Bichectomia</strong></p>
-
-          <p>
-            A bichectomia é um procedimento cirúrgico que consiste na retirada da bola de Bichat, um tecido adiposo localizado na região das bochechas. O acesso é feito por dentro da boca, próximo aos dentes superiores. É indicada para pacientes que mordem frequentemente as bochechas ou que desejam afinar o rosto, evidenciando a região do zigoma.
-          </p>
-
-          <p><strong>Botox</strong></p>
-
-          <p>
-            A toxina botulínica é uma proteína que age bloqueando temporariamente a contração muscular. Quando aplicada nos músculos da mímica facial, reduz as rugas de expressão e confere aspecto mais jovial à face. Para uso estético, apenas a toxina botulínica tipo A é aprovada.
-          </p>
-
-          <p>
-            Conhecida popularmente como botox, essa toxina possui diversos nomes comerciais como Dysport, Xeomin e Botulifit, sendo todos derivados da toxina tipo A. Pode ser utilizada em pacientes de todas as idades, com finalidade terapêutica ou preventiva.
-          </p>
-
-          <p>
-            A aplicação é feita com agulhas muito finas, em pequenas quantidades, em pontos específicos da face. Os efeitos duram de <strong>3 a 6 meses</strong>, sendo necessárias reaplicações periódicas para manutenção dos resultados.
-          </p>
-
-        </div>
-
-      </div>
-    </div>
-  </div>
-</div>
-
-
-    </div>
+    <p class="mb-0 small opacity-75">
+      Tratamentos modernos com responsabilidade e precisão
+    </p>
 
   </div>
 </section>
+
+<section id="cirurgia-bucal" class="py-5 service-section bg-light">
+  <div class="container">
+    <div class="row align-items-center g-5 flex-md-row-reverse">
+
+      <div class="col-12 col-md-5">
+        <img src="/assets/imagens/02.jpg"
+             class="img-fluid rounded-4 shadow"
+             alt="Cirurgia Bucal">
+      </div>
+
+      <div class="col-12 col-md-7">
+        <div class="service-header mb-3">
+          <span class="linha-vinho"></span>
+          <h3 class="fw-bold text-secundaria d-inline-block ms-3">
+            Cirurgia Bucal
+          </h3>
+        </div>
+
+        <p>
+          Procedimentos cirúrgicos realizados com planejamento,
+          técnica precisa e foco na segurança do paciente.
+        </p>
+
+        <ul>
+          <li>Extração de dentes inclusos</li>
+          <li>Biópsias</li>
+          <li>Frenectomia</li>
+          <li>Cirurgias pré-protéticas</li>
+        </ul>
+
+        <a href="#contato" class="btn btn-vinho">
+          Agendar Avaliação
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="protese-dentaria" class="py-5 service-section bg-white">
+  <div class="container">
+    <div class="row align-items-center g-5">
+
+      <div class="col-12 col-md-5">
+        <img src="/assets/imagens/03.jpg"
+             class="img-fluid rounded-4 shadow"
+             alt="Prótese Dentária">
+      </div>
+
+      <div class="col-12 col-md-7">
+        <div class="service-header mb-3">
+          <span class="linha-vinho"></span>
+          <h3 class="fw-bold text-secundaria d-inline-block ms-3">
+            Prótese Dentária
+          </h3>
+        </div>
+
+        <p>
+          Reabilitação oral focada na devolução da função mastigatória,
+          estética e conforto ao paciente.
+        </p>
+
+        <ul>
+          <li>Próteses fixas</li>
+          <li>Próteses removíveis</li>
+          <li>Prótese sobre implantes</li>
+          <li>Reabilitações complexas</li>
+        </ul>
+
+        <a href="#contato" class="btn btn-vinho">
+          Agendar Avaliação
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="py-5 descanso-vinho">
+  <div class="container text-center">
+
+    <span class="divider-branco mb-3"></span>
+
+    <h4 class="fw-light mb-3">
+      Tecnologia, precisão e cuidado em cada tratamento
+    </h4>
+
+    <p class="mb-0 small opacity-75">
+      Tratamentos modernos com responsabilidade e precisão
+    </p>
+
+  </div>
+</section>
+
+
+<section id="implantes-dentarios" class="py-5 service-section bg-light">
+  <div class="container">
+    <div class="row align-items-center g-5 flex-md-row-reverse">
+
+      <div class="col-12 col-md-5">
+        <img src="/assets/imagens/04.jpg"
+             class="img-fluid rounded-4 shadow"
+             alt="Implantes Dentários">
+      </div>
+
+      <div class="col-12 col-md-7">
+        <div class="service-header mb-3">
+          <span class="linha-vinho"></span>
+          <h3 class="fw-bold text-secundaria d-inline-block ms-3">
+            Implantes Dentários
+          </h3>
+        </div>
+
+        <p>
+          Solução moderna e segura para a reposição de dentes perdidos,
+          com planejamento digital e previsibilidade clínica.
+        </p>
+
+        <ul>
+          <li>Implante unitário</li>
+          <li>Implantes múltiplos</li>
+          <li>Prótese protocolo</li>
+          <li>Carga imediata</li>
+        </ul>
+
+        <a href="#contato" class="btn btn-vinho">
+          Agendar Avaliação
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<section class="py-5 descanso-section">
+  <div class="container text-center">
+    <h4 class="fw-light text-secundaria">
+      Estética e função caminhando juntas
+    </h4>
+  </div>
+</section>
+
+<section id="estetica-facial-dentaria" class="py-5 service-section bg-white">
+  <div class="container">
+    <div class="row align-items-center g-5">
+
+      <div class="col-12 col-md-5">
+        <img src="/assets/imagens/05.jpg"
+             class="img-fluid rounded-4 shadow"
+             alt="Estética Facial e Dentária">
+      </div>
+
+      <div class="col-12 col-md-7">
+        <div class="service-header mb-3">
+          <span class="linha-vinho"></span>
+          <h3 class="fw-bold text-secundaria d-inline-block ms-3">
+            Estética Facial e Dentária
+          </h3>
+        </div>
+
+        <p>
+          Procedimentos estéticos realizados com critério técnico,
+          respeitando a anatomia e a individualidade do paciente.
+        </p>
+
+        <ul>
+          <li>Clareamento dental</li>
+          <li>Lentes de contato dentais</li>
+          <li>Toxina botulínica</li>
+          <li>Harmonização facial</li>
+        </ul>
+
+        <a href="#contato" class="btn btn-vinho">
+          Agendar Avaliação
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="py-5 descanso-institucional">
+  <div class="container">
+    <div class="row align-items-center justify-content-center g-4">
+
+      <!-- Coluna do texto -->
+      <div class="col-12 col-md-8 col-lg-6 text-center text-md-start">
+        <h3 class="fw-light mb-3">
+          Conheça o meu livro!
+        </h3>
+        <h4 class="fw-light mb-3">
+          Arte e Literatura Forense
+        </h4>
+
+        <p class="mb-0 small">
+          Aprendendo fora da caixa.
+        </p>
+      </div>
+
+      <!-- Coluna do botão -->
+      <div class="col-12 col-md-4 col-lg-2 text-center text-md-end">
+        <a href="/arte-e-literatura-forense.html" class="btn btn-saiba-mais">
+          Saiba mais
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
 
 <section id="contato" class="py-5 contato-section">
   <div class="container">
