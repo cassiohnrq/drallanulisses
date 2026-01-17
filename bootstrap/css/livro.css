@@ -125,7 +125,7 @@ body {
       rgba(0,0,0,0.45),
       rgba(0,0,0,0.45)
     ),
-    url("/assets/imagens/imagem-site-livro.png") center / cover no-repeat;
+    url("assets/imagens/imagem-site-livro.png") center / cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -455,7 +455,7 @@ body {
 
 .bg-section {
       height: 120px; /* ajuste como quiser */
-      background-image: url('/assets/imagens/decor-line.png');
+      background-image: url('assets/imagens/decor-line.png');
       background-size: cover;
       background-position: center;
       box-shadow:
