@@ -4,6 +4,7 @@
   --bs-background: #E0F2F1;
   --bs-hover: #c0c0c0;
   --bs-back-profissional: #ffffffb6;
+  --bs-vinho:#4f0e1e;
 }
 
 html {
@@ -449,6 +450,7 @@ body {
   color: var(--bs-hover);
 }
 
+
 /* =========================
    Seção decorativa
    ========================= */
@@ -462,12 +464,219 @@ body {
         inset 0 20px 20px -20px rgba(0, 0, 0, 0.6),
         inset 0 -20px 20px -20px rgba(0, 0, 0, 0.6);
     }
+    .bg-section h3 {
+      color: #fff;
+      background-color: var(--bs-secundaria);
+      font-weight: 600;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+      max-width: 500px;
+      padding: 10px 5px;
+    }
 
 .list-no-bg .list-group-item {
     background-color: transparent;
     border: none;
     padding-left: 0; /* opcional: remove recuo do Bootstrap */
   }
+
+  .profissional-card a {
+  text-decoration: none; /* remove a linha do link */
+  color: #6c757d;        /* mantém a cor cinza */
+  transition: color 0.3s;
+}
+
+.profissional-card a:hover {
+  color: var(--bs-principal); /* muda a cor ao passar o mouse */
+}
+
+.btn-lattes {
+  background-color: var(--bs-back-profissional);
+  color: #fff;
+  border: var(--bs-secundaria) 2px solid;
+  border-radius: 50px;
+  padding: 0.5rem 1.5rem;
+  transition: 0.3s;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.btn-lattes:hover {
+  background-color: var(--bs-hover);
+  color: var(--bs-secundaria);
+}
+
+
+.text-secundaria {
+  color: var(--bs-secundaria);
+}
+
+.service-section {
+  position: relative;
+}
+
+.descanso-section,
+.descanso-vinho {
+  position: relative;
+  overflow: hidden;
+}
+
+h3, h4 {
+  letter-spacing: 0.5px;
+}
+
+p, li {
+  line-height: 1.7;
+}
+
+.small {
+  font-size: 0.9rem;
+}
+
+.vinho {
+  background-color: var(--bs-vinho);
+  color: #fff;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.divider-vinho,
+.divider-branco {
+  display: inline-block;
+  width: 60px;
+  height: 3px;
+  border-radius: 3px;
+}
+
+.divider-vinho {
+  background-color: var(--bs-principal);
+}
+
+.divider-branco {
+  background-color: #ffffff;
+}
+
+.linha-vinho {
+  display: inline-block;
+  width: 30px;
+  height: 3px;
+  background-color: var(--bs-principal);
+  vertical-align: middle;
+}
+
+.service-section img {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.service-section img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.btn-vinho {
+  background-color: var(--bs-principal);
+  color: #fff;
+  border-radius: 30px;
+  padding: 10px 26px;
+  transition: all 0.3s ease;
+}
+
+.btn-vinho:hover {
+  background-color: #b7282c;
+  color: #fff;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+ul li {
+  margin-bottom: 6px;
+}
+
+.descanso-vinho {
+  background-color: var(--bs-vinho);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Texto */
+.descanso-vinho h4 {
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+.descanso-vinho p {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* Divisor */
+.descanso-vinho .divider-branco {
+  display: inline-block;
+  width: 60px;
+  height: 3px;
+  background-color: #ffffff;
+  border-radius: 3px;
+}
+
+/* Imagem decorativa */
+.descanso-vinho img {
+  max-height: 120px;
+  opacity: 0.75;
+  filter: brightness(1.1) contrast(1.05);
+}
+
+/* Detalhe decorativo sutil no fundo */
+.descanso-vinho::before {
+  content: "";
+  position: absolute;
+  top: -40%;
+  right: -20%;
+  width: 420px;
+  height: 420px;
+  background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 70%);
+}
+
+.bg-secundaria {
+  background-color: var(--bs-secundaria);
+  color: #ffffff;
+}
+
+/* Título */
+.bg-secundaria h3 {
+  color: #ffffff;
+}
+
+/* Linha decorativa */
+.bg-secundaria .linha-vinho {
+  background-color: var(--bs-vinho);
+}
+
+/* Lista */
+.bg-secundaria ul li {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* Ajuste de espaçamento da lista */
+.bg-secundaria ul {
+  padding-left: 1.2rem;
+}
+
+/* Imagem */
+.bg-secundaria img {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Texto secundário, se existir */
+.bg-secundaria p {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+
+
+
 
 
 /* =========================
@@ -531,6 +740,23 @@ p.mb-4{
 
    #info-accordion .accordion-body {
     display: block;
+  }
+
+  .service-header {
+    text-align: center;
+  }
+
+  .linha-vinho {
+    display: none;
+  }
+
+  .descanso-section img,
+  .descanso-vinho img {
+    margin-bottom: 1rem;
+  }
+
+    .descanso-vinho {
+    text-align: center;
   }
 
 }
