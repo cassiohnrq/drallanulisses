@@ -184,8 +184,7 @@ body {
 .navbar-transparent:not(.navbar-scrolled) .navbar-brand:hover,
 .navbar-transparent:not(.navbar-scrolled) .navbar-brand:focus-visible {
   color: var(--bs-pericia);
-  background-color: var(--bs-secundaria);
-  border-radius: 2px;
+
 }
 
 /* Links do menu */
@@ -211,8 +210,7 @@ body {
 .navbar-transparent:not(.navbar-scrolled) .text-white:hover,
 .navbar-transparent:not(.navbar-scrolled) .text-white:focus-visible {
   color: var(--bs-pericia) !important;
-  background-color: var(--bs-secundaria);
-  border-radius: 2px;
+
 }
 .navbar-scrolled .text-white {
   color: var(--bs-pericia) !important;
@@ -240,7 +238,7 @@ body {
 
 .navbar-transparent:not(.navbar-scrolled) .nav-link:hover {
   color: var(--bs-pericia);
-  background-color: var(--bs-secundaria);
+  background-color: transparent;
   border-radius: 2px;
 }
 
@@ -253,7 +251,7 @@ body {
 
 .navbar-transparent:not(.navbar-scrolled) .nav-link:focus-visible {
   color: var(--bs-pericia);
-  background-color: var(--bs-secundaria);
+  background-color: transparent;
 }
 
 /* Dropdown */
@@ -311,7 +309,7 @@ body {
 
 .navbar-transparent:not(.navbar-scrolled) .navbar-toggler:hover,
 .navbar-transparent:not(.navbar-scrolled) .navbar-toggler:focus-visible {
-  background-color: var(--bs-secundaria);
+  background-color: transparent;
 }
 
 .navbar-transparent:not(.navbar-scrolled) .navbar-toggler:hover .navbar-toggler-icon,
